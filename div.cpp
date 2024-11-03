@@ -1,4 +1,4 @@
-float div(int a, int b)
+float mydiv(int a, int b)
 {
 
     return (float(a/b));
