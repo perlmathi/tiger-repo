@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
-extern int sum(int a, int b);
-extern float div(int a, int b);
+int sum(int a, int b);
+float div(int a, int b);
 
 int main()
 {
