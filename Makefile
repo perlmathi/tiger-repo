@@ -2,13 +2,20 @@
 CXX = g++
 CXXFLAGS = -Wall -g
 
-all: first
+all: calculator
 
-first: first.o
-	$(CXX) $(CXXFLAGS) -o first first.o
+calculator: main.o div.o sum.o
+	$(CXX) $(CXXFLAGS) -o calculator main.o div.o sum.o
 
-first.o: first.cpp
-	$(CXX) $(CXXFLAGS) -c first.cpp
 
+main.o: main.cpp
+	$(CXX) $(CXXFLAGS) -c main.cpp
+
+
+div.o: div.cpp
+	$(CXX) $(CXXFLAGS) -c div.cpp
+
+sum.o: sum.cpp
+	$(CXX) $(CXXFLAGS) -c sum.cpp
 clean:
-	rm -f *.o first
+	rm -f *.o main
