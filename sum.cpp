@@ -1,5 +1,8 @@
 int sum(int a, int b)
 {
 
-    return (a+b);
+    int c=0;
+    c=a/b
+    
+    return (c);
 }
